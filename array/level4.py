@@ -1,1 +1,2 @@
 print("fayaz")
+print("fayaz")
