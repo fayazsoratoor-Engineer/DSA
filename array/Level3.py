@@ -38,3 +38,11 @@ def max_average_subarray(arr, k):
 
     return max_average
 print(max_average_subarray([1, 12, -5, -6, 50, 3], 4))  # Output: 12.75
+
+def duplicates(arr):
+    duplicate=[]
+    for i in arr:
+        if arr.count(i)>1 and i not in duplicate    :
+            duplicate.append(i)
+    return duplicate
+print(duplicates([1,2,3,4,5,1,2,5,-1,-1]))
