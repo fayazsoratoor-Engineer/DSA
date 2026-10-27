@@ -54,3 +54,23 @@ def duplicates(arr):
             duplicate.append(arr[i])
     return duplicate
 print(duplicates([1,2,3,4,5,1,2,5,-1,-1]))
+
+def find(arr):
+    for i in range(len(arr)):
+        if arr.count(arr[i])<2:
+            return arr[i]
+print(find([1,2,3,4,5,1,2,5,-1,-1]))
+
+def finds(arr):
+    frequency={}
+    for i in arr:
+        if i in frequency:
+            frequency[i]+=1
+        else:
+            frequency[i]=1
+        
+
+            for key,value in frequency.items():
+                if value==1:
+                    return key
+print(finds([1,2,3,4,5,1,2,5,-1,-1]))
