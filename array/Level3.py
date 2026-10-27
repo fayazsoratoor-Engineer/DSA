@@ -70,7 +70,7 @@ def finds(arr):
             frequency[i]=1
         
 
-            for key,value in frequency.items():
-                if value==1:
-                    return key
-print(finds([1,2,3,4,5,1,2,5,-1,-1]))
+    for i in frequency:
+        if frequency[i]==1:
+            return i
+print(finds([1,2,9,7,3,4,5,1,2,5,-1,-1]))
