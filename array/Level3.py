@@ -46,3 +46,11 @@ def duplicates(arr):
             duplicate.append(i)
     return duplicate
 print(duplicates([1,2,3,4,5,1,2,5,-1,-1]))
+
+def duplicates(arr):
+    duplicate=[]
+    for i in range(len(arr)):
+        if arr.count(arr[i])>1 and arr[i] not in duplicate    :
+            duplicate.append(arr[i])
+    return duplicate
+print(duplicates([1,2,3,4,5,1,2,5,-1,-1]))
