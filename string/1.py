@@ -45,3 +45,19 @@ def non(str):
             break
     
 non("hello world")
+
+def vowel(str):
+    vowel=0
+    cons=0
+
+    for i in str:
+        if i in "aeiouAEIOU":
+            vowel+=1
+        else:
+            cons+=1
+    return vowel, cons
+print(vowel("hello world"))
+
+def reverse(str):
+    return str[::-1]
+print(reverse("hello world"))
