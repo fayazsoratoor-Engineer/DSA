@@ -47,3 +47,5 @@ s1.push(3)
 print(s1.display())
 s1.pop()
 print(s1.display())
+
+

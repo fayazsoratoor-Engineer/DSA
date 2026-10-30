@@ -16,4 +16,6 @@ class LinkedList:
 
         self.head.next=self.insert_end(data)
         self.head=self.head.next
-        
+
+    def delete(self,data):
+        pass
