@@ -80,3 +80,10 @@ letters=['a','b','c','d','e']
 for i, j in enumerate(letters):
     print(f"Index: {i}, Value: {j}")
 print(letters[2:-5:-1])
+
+
+def maggi():
+    for i in range(1,11):
+        for j in range(1,11):
+            print(f"{i}x{j}={i*j}")
+maggi()
