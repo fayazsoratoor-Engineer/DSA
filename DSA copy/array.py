@@ -87,3 +87,15 @@ def maggi():
         for j in range(1,11):
             print(f"{i}x{j}={i*j}")
 maggi()
+
+
+def vowel(str):
+    vowel=0
+    cons=0
+    for i in str:
+        if i in 'aeiouAEIOU':
+            vowel+=1
+        else:
+            cons+=1
+    return vowel, cons
+print(vowel("hello world"))
