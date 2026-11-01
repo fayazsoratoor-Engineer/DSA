@@ -99,3 +99,7 @@ def vowel(str):
             cons+=1
     return vowel, cons
 print(vowel("hello world"))
+
+def reverse(str):
+    return str[::-1]
+print(reverse("hello world"))
